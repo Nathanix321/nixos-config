@@ -10,3 +10,6 @@ show:
 
 check:
     nix flake check
+
+clean:
+    nix-collect-garbage
