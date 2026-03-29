@@ -42,8 +42,7 @@
         hardware = {
           enableAllFirmware = true;
           firmware = [ pkgs.linux-firmware ];
-          cpu.amd.updateMicrocode = c
-          onfig.hardware.enableRedistributableFirmware;
+          cpu.amd.updateMicrocode = config.hardware.enableRedistributableFirmware;
           graphics.enable = true;
           nvidia = {
             modesetting.enable = true;

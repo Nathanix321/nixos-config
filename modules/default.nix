@@ -1,9 +1,9 @@
-{ inputs, __findFile, ...}:
+{ den, inputs, lib, ...}:
 {
+  den.schema.user.classes = lib.mkDefault [ "homeManager" ];
   den.default = {
     includes = [
-      <den/home-manager>
-      <den/define-user>
+      den._.define-user
       (
         { host, ...}:
         {
@@ -30,6 +30,7 @@
           vim
           just
           vscodium
+          stremio-linux-shell
         ];
 
         services.avahi.enable = false; # in favor of srvos mdns config

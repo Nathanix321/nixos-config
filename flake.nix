@@ -1,7 +1,4 @@
-# DO-NOT-EDIT. This file was auto-generated using github:vic/flake-file.
-# Use `nix run .#write-flake` to regenerate it.
 {
-
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
 
   inputs = {
@@ -50,6 +47,11 @@
     srvos = {
       url = "github:nix-community/srvos";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    nixpkgs-stremio-fix = {
+      url = "github:thunze/nixpkgs/stremio-linux-shell-fix";
+      flake = false;
     };
 
   };
