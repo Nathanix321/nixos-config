@@ -49,11 +49,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixpkgs-stremio-fix = {
-      url = "github:thunze/nixpkgs/stremio-linux-shell-fix";
-      flake = false;
-    };
-
   };
 
 }
