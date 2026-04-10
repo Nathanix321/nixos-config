@@ -1,0 +1,1 @@
+Based on https://tangled.org/quasigod.xyz/nixconfig
