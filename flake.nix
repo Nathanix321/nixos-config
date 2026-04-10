@@ -54,6 +54,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-colors = {
+      url = "github:misterio77/nix-colors";
+      inputs.nixpkgs-lib.follows = "flake-parts/nixpkgs-lib";
+    };
+
+    catppuccin = {
+      url = "github:catppuccin/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
   nixConfig = {
     extra-substituters = [

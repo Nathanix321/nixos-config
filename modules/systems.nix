@@ -3,17 +3,20 @@
   gabbro = {
     workstation = den.lib.parametric.atLeast {
       includes = [
-        <gabbro/kde>
         <gabbro/printing>
         <gabbro/ssh>
         <gabbro/sleep>
         <gabbro/touchpad>
-        <gabbro/xserver>
+        <gabbro/theming>
+        <gabbro/wayland/niri>
+        <gabbro/xdg>
+        <gabbro/flatpak>
       ];
     };
     desktop = den.lib.parametric.atLeast {
       includes = [
-          <gabbro/workstation>
+        <gabbro/workstation>
+        <gabbro/performance/max>
       ];
     };
   };
