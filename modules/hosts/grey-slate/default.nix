@@ -74,10 +74,6 @@
           initrd.kernelModules = [ ];
           kernelModules = [ "kvm-amd" ];
           extraModulePackages = [ ];
-          loader = {
-            systemd-boot.enable = true;
-            efi.canTouchEfiVariables = true;
-          };
         };
 
         security = {

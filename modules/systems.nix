@@ -3,9 +3,11 @@
   gabbro = {
     workstation = den.lib.parametric.atLeast {
       includes = [
+        <gabbro/boot/secure>
+        <gabbro/boot/graphical>
         <gabbro/kde>
         <gabbro/printing>
-        <gabbro/ssh>
+        <gabbro/ssh/client>
         <gabbro/sleep>
         <gabbro/touchpad>
         <gabbro/xserver>

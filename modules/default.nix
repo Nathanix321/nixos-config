@@ -31,6 +31,7 @@
           just
           vscodium
           stremio-linux-shell
+          sbctl
         ];
 
         services.avahi.enable = false; # in favor of srvos mdns config
